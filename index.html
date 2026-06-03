@@ -1,182 +1,205 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafo's Website</title>
+    <title>Huynh Gia Hao | Software Engineering & AI Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-    
-    <header>
-        <div class="container">
-            <h1 class="logo">Hafo</h1>
-            <button id="theme-toggle-button" aria-label="Switch Theme"></button>
-            <nav>
-                <ul>
-                    <li><a href="#hero">Home</a></li> 
-                    <li><a href="#about">About</a></li> 
-                    <li><a href="#ky-nang">Skills</a></li>
-                    <li><a href="#du-an">Projects</a></li>
-                    <li><a href="#thanh-tich">Achievements</a></li>
-                    <li><a href="#lien-he">Contacts</a></li>
+<body class="light-theme">
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">GiaHaoHuynh</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#honors">Honors</a></li>
                 </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">#<!--⚡--></button>
             </nav>
         </div>
     </header>
-    
-    <main>
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <div class="avatar-box">
-                    <img src="pict/pict ava.jpg" alt="Ảnh đại diện của tôi" class="profile-img">
+
+    <main class="container content">
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h1 class="title">Huynh Gia Hao</h1>
+                <p class="subtitle">Software Engineering Student & AI Research Assistant</p>
+                <p class="desc">
+                    I am a sophomore Software Engineering student at <strong>FPT University (HCM)</strong>, deeply focused on Computer Vision, Autonomous Systems, and Deep Learning Applications. Currently serving as an active Research Assistant at AITA Lab and AIoT Pioneer Club, I specialize in architecting edge-inference pipelines and optimizing real-time tracking systems.
+                </p>
+                <div class="social-links">
+                    <a href="mailto:avatarstar1133@gmail.com" class="link-item">[Email]</a>
+                    <a href="https://github.com/avatarstar1133" target="_blank" class="link-item">[GitHub]</a>
+                    <a href="https://linkedin.com/in/giahaohuynh" target="_blank" class="link-item">[LinkedIn]</a>
+                    <a href="https://www.facebook.com/haongu6106" target="_blank" class="link-item">[Facebook]</a>
+                    <a href="https://codeforces.com/profile/hafo_bbo" target="_blank" class="link-item">[Codeforces]</a>
+                    <a href="https://oj.vnoi.info/user/avatarstar1133" target="_blank" class="link-item">[Vnoj]</a>
                 </div>
-                <h2>Huynh Gia Hao, sophomore.</h2>
-                <p class="tagline">I'm a second-year Software Engineering student specializing in AI at FPT University</p>
-                <p class="tagline highlight">Research Member at AI Lab & FARPC - Topic: Simultaneous Localization and Mapping (SLAM)</p>
-                
-                <div class="hero-links">
-                    <p><a href="https://hcmuni.fpt.edu.vn/" target="_blank" rel="noopener noreferrer">FPT University, Ho Chi Minh Campus.</a></p>
-                    <p>
-                        <a href="https://www.facebook.com/AiTALab.FPTU" target="_blank" rel="noopener noreferrer">AI Technology and Application Research Lab, </a>
-                        <a href="https://www.facebook.com/FARPC.HCM" target="_blank" rel="noopener noreferrer">FARPC - AIoT Research Pioneer Club.</a>
-                    </p>
-                </div>
-                <a href="#lien-he" class="button">Contacts</a>
+            </div>
+            <div class="about-img">
+                <img src="pict/pict ava4.jpg" alt="Huynh Gia Hao">
             </div>
         </section>
 
-        <section id="about">
-            <div class="container">
-                <h3>About me</h3>
-                <div class="card">
-                    <p>
-                        I am a second-year student currently pursuing a Bachelor's degree in Software Engineering at FPT University, Ho Chi Minh Campus, with an expected graduation in 2028. My academic journey began with a strong foundation in logical thinking and computer science, having specialized in Mathematics - Informatics at Ben Tre High School for the Gifted during the 2021-2024 academic period.
-                        <br><br>
-                        My current academic focus encompasses object-oriented programming, data structures and algorithms, and web development principles. I am actively gaining expertise in Java, Python, and front-end web technologies (HTML/CSS/JavaScript). My emerging interests include developing scalable software solutions, exploring efficient algorithms for problem-solving, and the application of machine learning in practical scenarios.
-                    </p>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <h2>Research & Professional Experience</h2>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>Research Assistant</h3>
+                        <span class="exp-date">Sep 2025 — Present</span>
+                    </div>
+                    <p class="exp-venue">AITA Lab — FPT University, HCM</p>
+                    <ul class="exp-bullet">
+                        <li>Researching high-performance computer vision pipelines for drone-based autonomous vision, target locking, and indoor/outdoor localization.</li>
+                        <li>Integrated foundation models (Florence-2, YOLO-World) with tracking frameworks (ByteTrack) to architect an Open-World Object Detection engine with real-time adaptive self-learning capabilities.</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <section id="ky-nang">
-            <div class="container">
-                <h3>Skills</h3>
-                <div class="skills-list">
-                    <ul>
-                        <li><b>Programming Languages:</b> C, C++, Java, Python, JavaScript</li>
-                        <li><b>Web Technologies:</b> HTML, CSS</li>
-                        <li><b>Tools & Platforms:</b> Git, VS Code</li>
-                        <li><b>Core Concepts:</b> OOP, Data Structures & Algorithms</li>
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>AI Researcher</h3>
+                        <span class="exp-date">Jan 2025 — Present</span>
+                    </div>
+                    <p class="exp-venue">AIoT Research Pioneer Club — FPT University, HCM</p>
+                    <ul class="exp-bullet">
+                        <li>Engineered software modules for autonomous line-following vehicles deployed directly on NVIDIA Jetson Nano hardware.</li>
+                        <li>Applied digital image processing techniques to maximize throughput and minimize latency under tight edge-computing resource constraints.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="du-an">
-            <div class="container">
-                <h3>Projects</h3>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <h4>FPT Hackathon 2025</h4>
-                        <p class="project-title">ZERO: Chip AI Logistics on Edge.</p>
-                        <p>Certificate Won the Promising Award in FPT University Hackathon 2025.</p>
-                        <p><b>Team:</b> Bui Anh Huy, Huynh Gia Hao, Nguyen Minh Tri, Le Gia Phuc.</p>
-                        <a href="https://github.com/avatarstar1133/Zero-FPT-Hackathon-2025.git" class="link-btn" target="_blank" rel="noopener noreferrer">Github repository project</a>
-                    </div>
-                    
-                    <div class="project-item">
-                        <h4>Young Informatics Contest</h4>
-                        <p class="project-title">Creative Software: Chemical Equation Balancing Software.</p>
-                        <p><b>Team:</b> Huynh Gia Hao, To Thanh Dat, and 4 others.</p>
-                        <a href="https://github.com/avatarstar1133/CanBangPTHH" class="link-btn" target="_blank" rel="noopener noreferrer">Github repository project</a>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>SEAL Hackathon 2025</h4>
-                        <div class="project-desc">
-                            <p>An AI application designed to analyze user sentiment and provide empathetic, emotionally-aware responses.</p>
-                            <p><b>Team:</b> Huynh Gia Hao, Ngo Van Phuc Duc, Gia Bao, Khuong Duy.</p>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <h2>Selected Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>ZERO: Chip AI Logistics on Edge</h3>
+                            <span class="project-tag">FPT Hackathon 2025</span>
                         </div>
-                        <a href="https://github.com/avatarstar1133/4TML" class="link-btn" target="_blank" rel="noopener noreferrer">Github repository project</a>
+                        <p class="project-desc">Designed and deployed an edge AI solution optimized for real-world logistics operations, focusing on heavy deep learning model optimization under constrained environments. Awarded the <strong>Promising Award (Top 4)</strong>.</p>
+                        <div class="tech-badges">
+                            <span>Python</span><span>YOLOv11</span><span>Edge Computing</span><span>Logistics Optimization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/avatarstar1133/Zero-FPT-Hackathon-2025.git" target="_blank">[Source Code]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Drone Swarm Target Tracking System</h3>
+                            <span class="project-tag">AITA Lab Research</span>
+                        </div>
+                        <p class="project-desc">Developed a decentralized computer vision system enabling autonomous target tracking and inter-drone coordination. Optimized deep learning models to maintain stable 30+ FPS edge inference.</p>
+                        <div class="tech-badges">
+                            <span>Python</span><span>Florence-2</span><span>ByteTrack</span><span>Autonomous UAV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/avatarstar1133/YOLO-World-master-DRONE-AITALAB" target="_blank">[Source Code]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Autonomous Line-Following Vehicle</h3>
+                            <span class="project-tag">Jetson Nano Deployment</span>
+                        </div>
+                        <p class="project-desc">Built robust lane-detection and real-time path-planning algorithms using OpenCV on the Jetson Nano platform, achieving stable end-to-end edge inference during physical loop testing.</p>
+                        <div class="tech-badges">
+                            <span>C++</span><span>OpenCV</span><span>Jetson Nano</span><span>Robotics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Chemical Equation Balancing Software</h3>
+                            <span class="project-tag">Young Informatics Contest</span>
+                        </div>
+                        <p class="project-desc">Developed a high-efficiency parsing engine in C++ to automatically analyze and balance complex chemical equations for educational systems.</p>
+                        <div class="tech-badges">
+                            <span>C++</span><span>Algorithms</span><span>Parser</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/avatarstar1133/CanBangPTHH" target="_blank">[Source Code]</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="thanh-tich">
-            <div class="container">
-                <h3>Achievements</h3>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <h4>Achievements in University</h4>
-                        <ul>
-                            <li>Honorable Mention Award in the ICPC Vietnam National 2025 competition.</li>
-                            <li>Promising Award in the FPT University Hackathon 2025 (Top4).</li>
-                            <li>Team ranked 7th in the SEAL Hackathon competition.</li>
-                            <li>Ranked 21st (Top 13%) out of 160 participants in the university's individual F-Talent Code 2025 Programming Contest.</li>
-                            <li>Very Good Student Award - Semester 1, GPA: 3.4/4.0 ~ 8.5/10.0.</li>
-                            <li>Very Good Student Award - Semester 2, GPA: 3.4/4.0 ~ 8.5/10.0.</li>
-                            <li>Total Average DSA: 4.0/4.0 ~ 10.0/10.0.</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>Achievements in High School</h4>
-                        <ul>
-                            <li>Second Prize in the Provincial Informatics Olympiad (2024).</li>
-                            <li>Recipient of a 70% Tuition Scholarship at FPT University.</li>
-                            <li>Top 10 School Rank for ranking at FPT University.</li>
-                            <li>Third Prize in the School-level STEM Competition (2023).</li>
-                            <li>Certificate of Active Participation in the Regional Young Informatics Contest (2022).</li>
-                            <li>Consolation Prize in the Provincial Young Informatics Contest (2022).</li>
-                            <li>Silver Medal in Volleyball at the Provincial Sports Festival (2024).</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-item">
-                        <h4>Others Achievements</h4>
-                        <ul>
-                            <li>1400+ rating on Codeforces - ranking Specialist.</li>
-                            <li>1400+ rating on VNOJ - ranking Specialist.</li>
-                            <li>Certificate of participation and ranked 443rd in the VNG-organized CodeTour #1 contest.</li>
-                            <li>-------------------</li>
-                            <li>Research Member at AI Lab & FARPC - Topic: Simultaneous Localization and Mapping (SLAM).</li>
-                        </ul>
-                    </div>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <p>C/C++, Python (Research & Production), Java, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h4>AI & Vision</h4>
+                    <p>YOLO (v8-v11), ByteTrack, Open-World Object Detection, OpenCV, Active Learning</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware & Tools</h4>
+                    <p>NVIDIA Jetson Nano, Linux System, Git, Docker, VS Code</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Core Concepts</h4>
+                    <p>Data Structures & Algorithms, Object-Oriented Programming (OOP), SLAM Fundamentals</p>
                 </div>
             </div>
         </section>
 
-        <section id="lien-he">
-            <div class="container">
-                <h3>Contacts</h3>
-                <p>Email: <a href="mailto:avatarstar1133@gmail.com" class="email-link">avatarstar1133@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/gia-h%C3%A0o-hu%E1%BB%B3nh-483a94282" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://github.com/avatarstar1133" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.coursera.org/user/b40cf25533cad2d5866ce3c6eb675291" target="_blank" rel="noopener noreferrer">Coursera</a>
-                    <a href="https://www.facebook.com/haongu6106" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://Discord.com/users/haf0." target="_blank" rel="noopener noreferrer">Discord</a>
-                    <a href="https://oj.vnoi.info/user/avatarstar1133" target="_blank" rel="noopener noreferrer">Vnoj</a>
-                    <a href="https://codeforces.com/profile/avatarstar1133" target="_blank" rel="noopener noreferrer">Codeforces</a>
-                    <a href="https://codetour.org/user/profile/7807" target="_blank" rel="noopener noreferrer">CodeTour</a>
-                    <a href="https://www.hackerrank.com/profile/avatarstar1133" target="_blank" rel="noopener noreferrer">HackkerRank</a>
-                    <a href="https://leetcode.com/u/avatarstar1133/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+        <!-- HONORS SECTION -->
+        <section id="honors" class="section">
+            <h2>Honors, Awards & Timelines</h2>
+            <div class="timeline-list">
+                <div class="timeline-row">
+                    <div class="timeline-date">Dec 2025</div>
+                    <div class="timeline-content"><strong>Honorable Mention Team</strong> — ICPC Vietnam National Programming Contest</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-date">Oct 2025</div>
+                    <div class="timeline-content"><strong>Promising Award</strong> — FPT University Hackathon (National Finals)</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-date">Oct 2025</div>
+                    <div class="timeline-content"><strong>Ranked 443 (Score: 29.00)</strong> — Code Tour 2025 Challenge #1 by VNG</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-date">May 2024</div>
+                    <div class="timeline-content"><strong>Second Prize</strong> — Provincial Informatics Olympiad</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-date">Academic</div>
+                    <div class="timeline-content"><strong>Honorable Student of Semester</strong> — FPT University (GPA: 8.5/4.0 scale)</div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; Copyright 2025 Huynh Gia Hao.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2026 Huynh Gia Hao. Built for Production.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

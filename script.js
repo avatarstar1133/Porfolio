@@ -1,41 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const themeToggleButton = document.getElementById('theme-toggle-button');
+    const themeBtn = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Định nghĩa Icon
-    const iconTulip = '🌷';   // Light Mode (Cute)
-    const iconPenguin = '🐧'; // Dark Mode (Cyberpunk)
+    // Khôi phục trạng thái giao diện đã lưu từ LocalStorage
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme) {
+        body.className = savedTheme;
+    } else {
+        // Mặc định chọn Light Theme nếu chưa từng cấu hình
+        body.className = 'light-theme';
+    }
 
-    // Hàm cập nhật icon dựa trên class của body
+    // Hàm cập nhật trạng thái Icon trên nút bấm
     const updateIcon = () => {
         if (body.classList.contains('dark-theme')) {
-            themeToggleButton.textContent = iconPenguin;
+            themeBtn.textContent = '☀️'; // Hiện mặt trời khi đang ở Dark Mode
         } else {
-            themeToggleButton.textContent = iconTulip;
+            themeBtn.textContent = '🌙'; // Hiện mặt trăng khi đang ở Light Mode
         }
     };
-
-    // Kiểm tra theme đã lưu trong localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark-theme') {
-        body.classList.add('dark-theme');
-    }
     
-    // Cập nhật icon lúc mới load trang
     updateIcon();
 
-    // Xử lý sự kiện click
-    themeToggleButton.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
-        updateIcon();
-
-        // Lưu trạng thái vào localStorage
+    // Lắng nghe sự kiện chuyển đổi theme
+    themeBtn.addEventListener('click', () => {
         if (body.classList.contains('dark-theme')) {
-            localStorage.setItem('theme', 'dark-theme');
+            body.className = 'light-theme';
+            localStorage.setItem('portfolio-theme', 'light-theme');
         } else {
-            localStorage.setItem('theme', 'light-theme');
+            body.className = 'dark-theme';
+            localStorage.setItem('portfolio-theme', 'dark-theme');
         }
+        updateIcon();
     });
-
 });
